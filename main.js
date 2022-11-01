@@ -8,13 +8,13 @@ window.addEventListener('scroll', () => {
 
 /////////////////////////show/hide faq answer //////////////////////////////////
 
-const faqs = document.querySelectorAll('.faq');
+// const faqs = document.querySelectorAll('.faq');
 
-faqs.forEach(faq => {
-  faq.addEventlistener('click', () => {
-      faq.classList.toogle('open');
-  })
-})
+// faqs.forEach(faq => {
+//   faq.addEventlistener('click', () => {
+//       faq.classList.toogle('open');
+//   })
+// })
 
 
 

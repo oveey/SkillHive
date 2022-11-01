@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./css/style.css"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-         <!--------------- google fonts ----------->
+        <!--------------- google fonts ----------->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +16,15 @@
      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
      <!--------------- swiper.js ----------->
-     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     </head>
     
     <body>
         <nav>
             <div class="container nav_container">
-                <a href="index.html"><h4>EGATOR</h4></a>
+                <a href="index.html"><h4>EDUCATION</h4></a>
                <ul class="nav_menu">
-                  <li> <a href="index.html">Home</a</li>
+                  <li> <a class="active" href="index.html">Home</a</li>
                   <li><a href="courses.html">Courses</a></li>  
                   <li><a href="contact.html">Contact</a></li> 
                   <li><a href="about.html">About</a></li> 
@@ -63,7 +61,7 @@
     
         </header>
         <!---------------End of Header ----------->
-    l
+    
     
      <!--------------- categroies section ----------->
         <section class="categories">
@@ -169,12 +167,40 @@
                 </article>
             </div>
         </section>
+
+
+        
     
         <!---------------section question--------------------------------------------------------->
         <section class="faqs">
             <h2>Frequently asked question</h2>
             <div class="container faqs_container">
-                <article class="faq">
+
+                <button class="accordion">How do i know the right course for me?   </button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Do i get a certificate for every course i take </button>
+                <div class="panel">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Will you assit me to get my first job ?</button>
+                <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion"> What are your payment options?</button>
+                <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Will i have a lifetime access to the courses?</button>
+                <div class="panel">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <!-- <article class="faq">
                     <div class="faq_icon"><i class="fa fa-plus"></i></div>
                         <div class="question_answer">  
                             <h4> How do i know the right course for me?</h4>
@@ -213,7 +239,7 @@
                 <article class="faq">
                     <div class="faq_icon"><i class="fa fa-plus"></i></div>
                         <div class="question_answer">  
-                            <h4> Will i have a lifetime access to the courses ?</h4>
+                            <h4> Will i have a lifetime access to the courses?</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, saepe! Ab sint tempore perspiciatis libero. Architecto.</p>
                         </div>
                 
@@ -228,7 +254,7 @@
                         </div>
                 
     
-                </article> 
+                </article>  -->
 
 
                 
@@ -331,6 +357,25 @@
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="main.js"></script>
 
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+
         <!-- Initialize Swiper -->
         <script>
            var swiper = new Swiper(".mySwiper", {
@@ -348,7 +393,7 @@
                nextEl: ".swiper-button-next",
                prevEl: ".swiper-button-prev",
              },
-           });
+            });
         </script>
 
 

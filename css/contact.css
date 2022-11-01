@@ -129,42 +129,7 @@ input, textarea{
 }
 
 
-/*====================MEDIA QUERY (TABLET)===========================*/
-@media screen and (max-width: 1024px) {
-    
-    .contact{
-        padding-bottom: 0;
-    }
-    .contact_container{
-        margin-top: 3rem;
-        height: auto;
-        width:26rem;
-        margin-left: -1rem;
-    }
 
-    .contact_aside{
-        background-color: aqua;
-        margin: auto;
-   
-        bottom: 0;
-    }
-
-    .contact_form{
-        align-self: center;
-        width:20rem;
-    }
-
-    .contact_socials{
-        position: relative;
-        display: flex;
-        gap:1rem;
-        left:23%;
-        margin-top: 3rem;
-    }
-    .aside_image{
-        width: 16rem;
-    }
-}
 
 /*====================MEDIA QUERY (PHONES)===========================*/
 @media screen and (max-width: 600px) {

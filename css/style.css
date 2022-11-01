@@ -29,6 +29,11 @@
 
     --transistion: all 800ms ease;
 }
+.nav_menu .active{
+    background-color: transparent;
+    padding: 0.7rem;
+
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -278,14 +283,50 @@ header {
 
 }
 
-.faqs_container{
-    display: grid;
+/* .faqs_container{
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+}  */
+
+.accordion {
+  background: var(--color-bg);
+  color: #444;
+  cursor: pointer;
+  padding:20px;
+  margin-bottom: 0.2rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: left;
+  width: 3%;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 5px;
 }
 
 
-.faq{
+.panel { 
+  padding: 0 18px;
+  background: var(--color-bg);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* .faq{
     display:flex;
     padding: 2rem;
     align-items:center;
@@ -312,7 +353,7 @@ header {
 }
 .faq.open p{
     display: block;
-}
+} */
 
 /* .question_answer.open p{
     display: none;
@@ -450,15 +491,15 @@ header {
         cursor: pointer;
     }
     
-    nav button#close-menu-btn{
+    nav button #close-menu-btn{
         display:none;
     }
     .nav_menu{
         position: fixed;
         top:5rem;
-        right: -10%;
+        right: 10%;
         height: fit-content;
-        width:13rem;
+        width:20rem;
         flex-direction: column;
         gap:0;
         display: none; 
@@ -509,7 +550,7 @@ header {
 
    /******************************************HEADER*********************/
     header {
-        height: 52vh;
+        height: 92vh;
         margin-bottom: 4rem;
     }
     .header_container{
@@ -533,7 +574,7 @@ header {
     }
    
   .categories_left{
-    margin-right: 0;
+    margin-left: 0rem;
   }
 
 
@@ -548,12 +589,12 @@ header {
 
 
     /*****************************************FAQ*********************************/
-  .faq{  
+  /* .faq{  
       padding: 2rem;
       margin-left: 5rem;
 
     }
-    
+     */
  
   /*==========footer==============*/
   .footer_container{
@@ -598,7 +639,7 @@ header {
         cursor: pointer;
     }
     
-    nav button#close-menu-btn{
+    nav button #close-menu-btn{
         display:none;
     } 
     .nav_menu{
@@ -685,7 +726,7 @@ header {
         display: inline-block;
     }
     
-    .faqs_container{
+    /* .faqs_container{
         grid-template-columns:none;
         margin-left: -3rem;
     }
@@ -693,7 +734,7 @@ header {
     .faq{
         width: 21rem;
        
-    }
+    } */
   
    
     .testimonial_body{
@@ -707,6 +748,26 @@ header {
         grid-template-columns: 1fr 1fr;
     }  
 
+    .accordion {
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: left;
+        width: 7%;
+        display: flex;
+        align-self: flex-start;
+        margin-left: 5px;
+    }
+      
+
+  
+    
  
     
    
