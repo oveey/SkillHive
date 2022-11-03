@@ -162,6 +162,9 @@
         margin-left: 30px;
     }
 
+   
+
+
 
     .team{
         width: 100%;
@@ -198,8 +201,16 @@
         display: grid;
         grid-template-columns: none;
         margin: auto;
-        gap: 1.2rem;
+        gap: 1rem;
     }
+
+    .about_achievements_right{
+        text-align: center;
+
+    }
+    /* .achievements_card{
+        width: 100%;
+    } */
   
 
     
@@ -211,10 +222,10 @@
     }
 
     
-    .achievements_cards{
+    /* .achievements_cards{
         width: 100%;
         margin: auto;
-    }
+    } */
 
     
   
