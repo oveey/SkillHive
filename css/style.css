@@ -491,9 +491,10 @@ header {
         cursor: pointer;
     }
     
-    nav button #close-menu-btn{
+    #close-menu-btn{
         display:none;
     }
+
     .nav_menu{
         position: fixed;
         top:5rem;
@@ -611,7 +612,7 @@ header {
     }
 
     
-    .nav_menu{
+    /* .nav_menu{
         position: fixed;
         top:4rem;
         right: 1%;
@@ -675,7 +676,7 @@ header {
             opacity: 1;
 
         }
-    }
+    } */
 
 
     header{
