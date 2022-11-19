@@ -747,8 +747,16 @@ header {
    
 
     /*==========footer==============*/
+
+
+    .footer{
+        height: 30rem;
+        background-color: #6c63ff;
+    
+    }
     .footer_container{
         grid-template-columns: 1fr 1fr;
+
     }  
 
     .accordion {
