@@ -30,10 +30,17 @@
     --transistion: all 800ms ease;
 }
 .nav_menu .active{
-    background-color: transparent;
+    background-color: var(--color-danger);
     padding: 0.7rem;
 
 }
+.footerline {
+    border-bottom: 0.1px solid rgb(63, 61, 61);
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+  
 
 body{
     font-family: Arial, Helvetica, sans-serif;
