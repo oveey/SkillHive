@@ -44,5 +44,14 @@ const closeNav = () => {
 closeBtn.addEventListener('click', closeNav)
 
 
+const button = document.querySelector('#submit-button');
+button.addEventListener('click', () => {
+  button.disabled = true;
+  button.querySelector('span').style.display = 'none';
+  button.querySelector('.spinner').style.display = 'block';
+  // Do some processing or submit the form
+});
+
+
 
 
