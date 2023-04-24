@@ -48,6 +48,9 @@ body{
     color: var(--color-white);
     background: var(--color-bg);
 }
+p{
+    color: #b0b7b4;
+}
 
 h1, h2, h3, h4,h5{
     line-height: 1.2;
@@ -108,6 +111,30 @@ img{
     max-width:100%;
     height: auto;
 }
+
+/* .header_left span {
+    color: rgb(239, 20, 53);
+} */
+.curved-text {
+    display: inline-block;
+    position: relative;
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+  
+  
+.curved-text::after {
+    content: "";
+    position: absolute;
+    left: -10%;
+    bottom: -10px;
+    width: 120%;
+    height: 20px;
+    border-bottom: 2px solid #4CAF50;
+    border-radius: 50%;
+    transform: skew(-20deg);
+    z-index: -1;
+  }
 
 /*********change nav bar on scroll using javascript ************/
 .window-scroll {
