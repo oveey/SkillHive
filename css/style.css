@@ -609,10 +609,13 @@ header {
        
     }
     
+   
     
     .right-image img{
         position: relative;
         left:3rem;
+        padding: 4rem;
+        margin: auto;
     }
  /******************************************navbar*********************************/
     .categories{
