@@ -595,6 +595,7 @@ header {
         background: var(--color-bg1);
         color: var(--color-white);
     }
+
     
 
    /******************************************HEADER*********************/
@@ -608,10 +609,13 @@ header {
        
     }
     
+   
     
     .right-image img{
         position: relative;
         left:3rem;
+        padding: 4rem;
+        margin: auto;
     }
  /******************************************navbar*********************************/
     .categories{
