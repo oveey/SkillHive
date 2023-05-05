@@ -90,6 +90,7 @@ a{
     color:var(--color-white);
     padding:0.8rem 2rem;
     border:1px solid transparent;
+    border-radius: 3px;
     font-weight: 500;
     transition: var(--transistion);
 }
