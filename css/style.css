@@ -638,6 +638,11 @@ header {
     .courses_container{
       grid-template-columns: 1fr 1fr;
     }
+
+    .padding{
+        padding: 2rem;
+        background: #00bf8e;
+    }
   
 
 
