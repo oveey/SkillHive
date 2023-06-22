@@ -5,7 +5,7 @@ Certainly! Here's a template you can use to write a README file for your SkillHi
 
 SkillHive is a comprehensive educational resource website designed to help individuals grow their skills and excel in their career path. It provides a wide range of learning materials, tutorials, and resources to unlock new opportunities and enhance professional development.
 
-![SkillHive Screenshot](/path/to/screenshot.png)
+<img width="1280" alt="Screenshot 2023-06-23 at 00 45 55" src="https://github.com/oveey/SkillHive/assets/94080967/f8e558bb-b28f-4a6e-b9cf-1db582f7ab37">
 
 ## Features
 
